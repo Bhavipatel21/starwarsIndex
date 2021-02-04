@@ -11,21 +11,19 @@ body {
   }
 
   /* Center it, set the color, size and hide the text */
-.intro {
+.intro-text {
   top: 45%;
   left: 50%;
   z-index: 1;
   animation: intro 6s ease-out 1s;
   color: rgb(75, 213, 238);
   font-weight: 400;
-  font-size: 150%;
+  font-size: 450%;
   opacity: 0;
-}*/
-
-.navbar {
-  background-color: black;
-
+  justify-content: center;
+  align-items: center;
 }
+
 
 .logo-image {
   height: 150px;
@@ -122,6 +120,8 @@ p {
 
 #title, #subtitle {
   text-align: center;
+  justify-content: center;
+
 }
 
 @keyframes scroll {
@@ -131,4 +131,29 @@ p {
     100% {
         top: -170%;
     }
+}
+#div-card {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: solid;
+    color: yellow;
+}
+
+
+#search {
+  border: solid;
+  color: yellow;
+  margin: 10px;
+  height: 50px;
+  width: 250px;
+}
+
+#search-btn {
+  background-color: purple;
+  width: 75px;
+  padding: 5px;
 }

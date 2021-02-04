@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Index of the Galaxy</title>
 </head>
@@ -17,12 +17,17 @@
 
 
 
-    <div class="container">
+    <div class="ui container">
 
-        <!--Intro row-->
-        <div class="row">
-            <section class="intro"> A long time ago, in a galaxy far,<br> far away...
+
+        <!--Intro-->
+        <div>
+            <section id="intro-text" class="intro"> A long time ago, in a galaxy far,<br> far away...
+
             </section>
+            <audio preload="auto" autoplay>
+                <source src="./assets/audio/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg">
+            </audio>
 
 
 
@@ -31,14 +36,15 @@
 
             <div id="board">
                 <div id="content">
-                    <div class="container center-align">
+                    <div class="ui container">
+                        <p></p>">
                         <div>
                             <div>
-                                <a class="navbar-brand" href="/">
-                                    <div>
-                                        <img src="SW-logo.png" class="img-fluid logo-image">
-                                    </div>
-                                </a>
+
+                                <div>
+                                    <img id="SWlogo" src="./assets/images/SW-logo.png" class="img-fluid logo-image">
+                                </div>
+
 
 
                             </div>
@@ -58,32 +64,44 @@
     </div>
 
     <!--Search-->
-    <div class="container">
-        <!--<div class="row">
+    <div class="ui container">
+        <div id="div-card" class="ui centered card">
 
-            <div class="col s4 yellow-text">Yabba dabba doo!!!</div>
+            <div class="row">
+                <div class="col">
+                    <div id="search" class="ui card">
+                        <div class="ui input">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
 
-            <div class="col s4 yellow-text">Excellent.....</div>
+                    <div id="search-btn" class="ui button">
+                        Search
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!--Results-->
-        <div class="row">
-
-        </div>
-
-
-
-
 
     </div>
-    <!--container tag ends-->
+    <!--container div tag closed -->
 
 
 
 
+    <!--<div class="col s4 yellow-text">Yabba dabba doo!!!</div>
 
+            <div class="col s4 yellow-text">Excellent.....</div>
+        </div>-->
 
 </body>
-<script src="script.js"></script>
+<!--Semantic JS link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+<!--Custom JS link-->
+<script src="./assets/js/script.js"></script>
 
 </html>
