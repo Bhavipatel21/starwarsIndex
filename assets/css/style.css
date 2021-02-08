@@ -1,8 +1,11 @@
 body {
     margin: 0;
     background-color: black;
-  }
-  
+    color: aliceblue;
+ }
+ 
+
+
 .star {
     position: absolute;
     width: 1px;
@@ -11,19 +14,21 @@ body {
   }
 
   /* Center it, set the color, size and hide the text */
-.intro-text {
+.intro {
   top: 45%;
   left: 50%;
   z-index: 1;
   animation: intro 6s ease-out 1s;
   color: rgb(75, 213, 238);
   font-weight: 400;
-  font-size: 450%;
+  font-size: 150%;
   opacity: 0;
-  justify-content: center;
-  align-items: center;
-}
+}*/
 
+.navbar {
+  background-color: black;
+
+}
 
 .logo-image {
   height: 150px;
@@ -120,8 +125,6 @@ p {
 
 #title, #subtitle {
   text-align: center;
-  justify-content: center;
-
 }
 
 @keyframes scroll {
@@ -132,28 +135,13 @@ p {
         top: -170%;
     }
 }
-#div-card {
-    width: 500px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border: solid;
-    color: yellow;
-}
 
-
-#search {
-  border: solid;
-  color: yellow;
-  margin: 10px;
-  height: 50px;
-  width: 250px;
+#parent{
+  border: solid 2px yellow;
 }
-
-#search-btn {
-  background-color: purple;
-  width: 75px;
-  padding: 5px;
-}
+ /* #leftSide{
+  border: solid 2px yellow;
+} */
+#rightSide{
+  border: solid 2px yellow;
+} 
