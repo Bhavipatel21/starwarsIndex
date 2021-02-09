@@ -4,8 +4,6 @@ body {
     color: aliceblue;
  }
  
-
-
 .star {
     position: absolute;
     width: 1px;
@@ -83,8 +81,6 @@ body {
       width: 18em;        
   }
 }
-  
-
 
 p {
   color: #FFFF82;
