@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    position: relative;
+    height: 100%;
     background-color: black;
     color: aliceblue;
  }
@@ -15,26 +17,29 @@ body {
 
   /* Center it, set the color, size and hide the text */
 .intro {
+
+  margin: 30px;
+  padding: 30px;
+
   top: 45%;
   left: 50%;
   z-index: 1;
-  animation: intro 6s ease-out 1s;
+  animation: intro 5s ease-out 1s;
   color: rgb(75, 213, 238);
   font-weight: 400;
-  font-size: 150%;
+
+  font-size: 400%;
+  line-height: 25px;
   opacity: 0;
-}*/
-
-.navbar {
-  background-color: black;
-
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  position: center;
 }
 
-.logo-image {
-  height: 150px;
-  width: 300px;
 
-}
+
+
 
 @keyframes intro {
   0% {
@@ -53,13 +58,17 @@ body {
 
 /* Set the animation & hide the logo */
 .logo {    
-  position: absolute;
+  position: center;
   top: 20%;
   left: 45%;
   z-index: 1;
   margin: auto;
   animation: logo 9s ease-out 9s;
   opacity: 0;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 750px;
 }
 
 .logo svg {
@@ -86,7 +95,7 @@ body {
   
 
 
-p {
+.p {
   color: #FFFF82;
 }
 
@@ -102,9 +111,10 @@ p {
   overflow: hidden;
   font-size: 350%;
   height: 50em;
-  width: 18em;
+  width: 25em;
   bottom: 0;
   left: 50%;
+  
 }
 
 #board:after {
@@ -120,11 +130,21 @@ p {
 #content {
   animation: scroll 100s linear 8s;
   position: absolute;
+  justify-content: center;
   top: 100%;
 }
 
 #title, #subtitle {
   text-align: center;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
+
+
 }
 
 @keyframes scroll {
@@ -136,6 +156,54 @@ p {
     }
 }
 
+
+#search {
+  border: solid;
+  color: yellow; 
+  margin: 10px;
+  height: 50px;
+  width: 250px;
+}
+
+#search-btn {
+  background-color: purple;
+  color: yellow;
+  width: 75px;
+  padding: 5px;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  border: solid;
+  border-color: yellow;
+  height: 3%;
+  width: 100%;
+  background-color: purple;
+  text-decoration-color: yellow;
+  font-size: 25px;
+  text-align: center;
+}
+
+.devs-card {
+background-color: black;
+border:solid;
+border-color: #FFFF82;
+height: 600px;
+width: 500px;
+}
+
+.devs-bio {
+background-color: black;
+border:solid;
+border-color: #FFFF82;
+height: 600px;
+width: 900px;
+float: right;
+position: justify;
+}
+
 #parent{
   border: solid 2px yellow;
 }
@@ -145,3 +213,4 @@ p {
 #rightSide{
   border: solid 2px yellow;
 } 
+
