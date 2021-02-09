@@ -3,8 +3,11 @@ body {
     position: relative;
     height: 100%;
     background-color: black;
-  }
-  
+    color: aliceblue;
+ }
+ 
+
+
 .star {
     position: absolute;
     width: 1px;
@@ -14,14 +17,17 @@ body {
 
   /* Center it, set the color, size and hide the text */
 .intro {
+
   margin: 30px;
   padding: 30px;
+
   top: 45%;
   left: 50%;
   z-index: 1;
   animation: intro 5s ease-out 1s;
   color: rgb(75, 213, 238);
   font-weight: 400;
+
   font-size: 400%;
   line-height: 25px;
   opacity: 0;
@@ -30,6 +36,8 @@ body {
   align-items: center;
   position: center;
 }
+
+
 
 
 
@@ -128,12 +136,14 @@ body {
 
 #title, #subtitle {
   text-align: center;
+
   justify-content: center;
   align-items: center;
   margin-left: 10px;
   padding-left: 10px;
   margin-right: 10px;
   padding-right: 10px;
+
 
 }
 
@@ -144,16 +154,6 @@ body {
     100% {
         top: -170%;
     }
-}
-#div-card {
-    width: 500px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border: solid;
-    color: yellow;
 }
 
 
@@ -203,3 +203,14 @@ width: 900px;
 float: right;
 position: justify;
 }
+
+#parent{
+  border: solid 2px yellow;
+}
+ /* #leftSide{
+  border: solid 2px yellow;
+} */
+#rightSide{
+  border: solid 2px yellow;
+} 
+

@@ -1,3 +1,4 @@
+
 # starwarsIndex
 
 # Overview
@@ -16,3 +17,4 @@ When I type a characters name, a specific species or planet
 Then I am presented with information about my query, including a brief character bio, a description of a planet(s), or a description of a species, along with related GIF images
 When I look over the provided information
 Then I am able to gain a brief understanding of my search query
+
