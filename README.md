@@ -2,6 +2,7 @@
 
 AS a person with limited knowledge about StarWars, and WANT to search more about Star-Wars and their characters, planet, vehicles, and etc. The page will display the details regarding the search.
 
+
 *  Acceptance Criteria
 
 GIVEN a StarWars Index with search inputs
