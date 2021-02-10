@@ -66,22 +66,24 @@
         <!--Search-->
         <section class="ui container">
 
-            <section id="section-card" class="ui centered card">
+            <section id="section-card" class="ui centered card" style="
+            margin-bottom: 30px; border: solid 5px yellow">
                 <!--row 1-->
                 <section class="row">
-                    <section class="col">
-                        <section id="search" class="ui card ui input">
-                            <input type="text" placeholder="Search..." id="name">
-                        </section>
+                    <section class="col search-col">
+                    <div class="ui large icon input">
+                        <input type="text" placeholder="Search...">
+                        <i id="search-btn" class="inverted circular purple search link icon"></i>
+                      </div>
                     </section>
                 </section>
 
                 <!--row 2-->
-                <section class="row">
-                    <section class="col">
-                        <button id="search-btn" class="ui button">Search</button>
+                    <section class="col clear">
+                        <button class="ui purple button ">Clear</button>
                     </section>
-                </section>
+                
+                
                <!--row 3-->
 
 
@@ -141,7 +143,7 @@
     <!--Footer-->
     <section class="ui rail">
         <footer class="footer">
-            <a href="contributors.html">Meet the Creators</a>
+            <a style="color: yellow" href="contributors.html">Meet the Creators</a>
         </footer>
     </section>
 

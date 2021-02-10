@@ -1,22 +1,20 @@
 /*Intro Developer: Christopher Kade*/
 body {
-    margin: 0;
-    position: relative;
-    height: 100%;
-    background-color: black;
-    color: aliceblue;
- }
- 
-.star {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    background-color: white;
-  }
+  margin: 0;
+  position: relative;
+  height: 100%;
+  background-color: black;
+  color: aliceblue;
+}
 
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
 
 .intro {
-
   margin: 30px;
   padding: 30px;
 
@@ -37,28 +35,23 @@ body {
   position: justify;
 }
 
-
-
-
-
 @keyframes intro {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   20% {
-      opacity: 1;
+    opacity: 1;
   }
   90% {
-      opacity: 1;
+    opacity: 1;
   }
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
-
-.logo {   
-  display: flex; 
+.logo {
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: justify;
@@ -80,25 +73,24 @@ body {
 /* Scale the logo down and maintain it centered */
 @keyframes logo {
   0% {
-      width: 18em;        
-      transform: scale(2.75);
-      opacity: 1;
+    width: 18em;
+    transform: scale(2.75);
+    opacity: 1;
   }
   50% {
-      opacity: 1;
-      width: 18em;      
+    opacity: 1;
+    width: 18em;
   }
   100% {
-      opacity: 0;
-      transform: scale(0.1);
-      width: 18em;        
+    opacity: 0;
+    transform: scale(0.1);
+    width: 18em;
   }
 }
 
-p {
-  color: #FFFF82;
-}
-
+/*p {
+  color: #ffff82;
+}*/
 
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -121,74 +113,74 @@ p {
 
 #board:after {
   position: absolute;
-  content: ' ';
+  content: " ";
   bottom: 60%;
   left: 0;
   right: 0;
   top: 0;
 }
-
+p {
+  color: yellow;
+}
 /* Set the scrolling animation and position it */
 #content {
-  animation: scroll 30s linear 8s;
+  animation: scroll 90s linear 8s;
   position: absolute;
   justify-content: center;
   top: 100%;
 }
 
-#title, #subtitle {
+#title,
+#subtitle {
   display: flex;
   text-align: center;
-
   justify-content: center;
   align-items: center;
   margin-left: 10px;
   padding-left: 10px;
   margin-right: 10px;
   padding-right: 10px;
-
-
 }
 
 @keyframes scroll {
-    0% {
-        top: 100%;
-    }
-    100% {
-        top: -170%;
-    }
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
 }
-
 
 /*Custom CSS*/
 #div-card {
-    width: 500px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border: solid;
-    color: yellow;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: solid;
+  color: yellow;
 }
-
-
 
 #search {
   border: solid;
-  color: yellow; 
+  color: yellow;
   margin: 10px;
   height: 50px;
   width: 250px;
 }
 
-#search-btn {
-  background-color: purple;
-  color: yellow;
-  width: 75px;
-  padding: 5px;
+.search-col {
+  margin-top: 10px;
+  padding-left: 35px;
 }
 
+.clear {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
 
 .footer {
   position: fixed;
@@ -199,43 +191,40 @@ p {
   border-color: yellow;
   background-color: purple;
   width: 100%;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .devs-bio {
-height: 900px;
-width: 300px;
+  height: 900px;
+  width: 300px;
 }
-
 
 .devs-bio {
-background-color: black;
-border:solid;
-border-color: #FFFF82;
-height: 600px;
-width: 900px;
-float: right;
-position: justify;
+  background-color: black;
+  border: solid;
+  border-color: #ffff82;
+  height: 600px;
+  width: 900px;
+  float: right;
+  position: justify;
 }
 
-.parent{
+.parent {
   border: solid 2px yellow;
 }
- /* #leftSide{
+/* #leftSide{
   border: solid 2px yellow;
 } */
-#rightSide{
+#rightSide {
   border: solid 2px yellow;
-} 
+}
 
-#display{
+#display {
   height: 500px;
   width: 500px;
-
 }
 
 .list-items {
-
-  color:purple;
+  color: purple;
 }
