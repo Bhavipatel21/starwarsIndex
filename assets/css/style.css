@@ -1,3 +1,4 @@
+/*Intro Developer: Christopher Kade*/
 body {
     margin: 0;
     position: relative;
@@ -13,7 +14,7 @@ body {
     background-color: white;
   }
 
-  /* Center it, set the color, size and hide the text */
+  
 .intro {
 
   margin: 30px;
@@ -29,10 +30,11 @@ body {
   font-size: 400%;
   line-height: 25px;
   opacity: 0;
+  display: flex;
   text-align: justify;
   justify-content: center;
   align-items: center;
-  position: center;
+  position: justify;
 }
 
 
@@ -54,17 +56,19 @@ body {
   }
 }
 
-/* Set the animation & hide the logo */
-.logo {    
-  position: center;
+
+.logo {   
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  position: justify;
   top: 20%;
-  left: 45%;
+  left: 50%;
   z-index: 1;
   margin: auto;
   animation: logo 9s ease-out 9s;
   opacity: 0;
-  justify-content: center;
-  align-items: center;
   height: 500px;
   width: 750px;
 }
@@ -95,12 +99,15 @@ body {
   color: #FFFF82;
 }
 
-/* Set the font, lean the board, position it */
+
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   transform: perspective(300px) rotateX(25deg);
   transform-origin: 50% 100%;
-  text-align: justify;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;
+  text-align: justify;*/
   position: absolute;
   margin-left: -9em;
   font-weight: bold;
@@ -110,7 +117,6 @@ body {
   width: 25em;
   bottom: 0;
   left: 50%;
-  
 }
 
 #board:after {
@@ -131,6 +137,7 @@ body {
 }
 
 #title, #subtitle {
+  display: flex;
   text-align: center;
 
   justify-content: center;
@@ -153,6 +160,20 @@ body {
 }
 
 
+/*Custom CSS*/
+#div-card {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: solid;
+    color: yellow;
+}
+
+
+
 #search {
   border: solid;
   color: yellow; 
@@ -170,25 +191,23 @@ body {
 
 
 .footer {
-  position: absolute;
+  position: fixed;
+  left: 0;
   bottom: 0;
+  height: 3%;
   border: solid;
   border-color: yellow;
-  height: 3%;
-  width: 100%;
   background-color: purple;
-  text-decoration-color: yellow;
-  font-size: 25px;
+  width: 100%;
+  font-size: 30px;
   text-align: center;
 }
 
-.devs-card {
-background-color: black;
-border:solid;
-border-color: #FFFF82;
-height: 600px;
-width: 500px;
+.devs-bio {
+height: 900px;
+width: 300px;
 }
+
 
 .devs-bio {
 background-color: black;
@@ -209,4 +228,5 @@ position: justify;
 #rightSide{
   border: solid 2px yellow;
 } 
+
 
