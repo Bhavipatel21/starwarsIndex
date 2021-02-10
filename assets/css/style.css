@@ -14,7 +14,7 @@ body {
     background-color: white;
   }
 
-  
+
 .intro {
 
   margin: 30px;
@@ -130,7 +130,7 @@ p {
 
 /* Set the scrolling animation and position it */
 #content {
-  animation: scroll 100s linear 8s;
+  animation: scroll 30s linear 8s;
   position: absolute;
   justify-content: center;
   top: 100%;
@@ -235,3 +235,7 @@ position: justify;
 
 }
 
+.list-items {
+
+  color:purple;
+}
