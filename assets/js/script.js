@@ -26,13 +26,15 @@ $(document).ready(function () {
   searchBtn.click(function () {
     var name = $("#name").val();
     getSwapiApiData(name);
-    searchHistory(name);
+    
   });
 
 
   //create a function to pull data from swapi api
   function getSwapiApiData(name) {
     var swapiUrl = "https://swapi.dev/api/people/?search=" + name;
+
+    console.log(swapiUrl);
     $("#details").empty();
 
     fetch(swapiUrl)
@@ -162,11 +164,13 @@ $(document).ready(function () {
       var li = $("<li>" + liText + "</li>")
       $(".list-items").append(li)
 
-    }
+        }
+
+        $('#clear-btn').click(function(){
+          localStorage.clear()
+          $(".list-items").empty();
+        })
 
   }
-  $('#clear-btn').click(function(){
-    localStorage.clear()
-    li.empty();
-  })
+
 });
