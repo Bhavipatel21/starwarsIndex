@@ -1,6 +1,5 @@
-//Sets the number of stars to display
+ //Sets the number of stars to display
 const stars = 100;
-
 //For every star to display
 for (let i = 0; i < stars; i++) {
     let star = document.createElement("div");
@@ -19,3 +18,6 @@ function getRandomPosition() {
     var randomY = Math.floor(Math.random() * y);
     return [randomX, randomY];
 }
+var searchBtn= document.getElementById('search-btn');
+var requestUrl = 'http://intergalacticdb.me/api/characters/name'
+ 
