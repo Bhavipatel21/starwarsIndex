@@ -44,4 +44,13 @@ Then I am able to gain a brief understanding of my search query
 -Kajal Patel
 -Zakk Haug
 
+### Links
+
+Github Repo-https://github.com/Bhavipatel21/starwarsIndex
+Deployed Page-https://bhavipatel21.github.io/starwarsIndex/
+
 ### Screenshots
+
+![Screen_Shot_Intro](./assets/images/Screen_Shot_Intro)
+![Screen_Shot_Works](./assets/images/Screen_Shot_Works)
+![Screen_Shot_Fail] (./assets/images/Screen_Shot_Fail)
