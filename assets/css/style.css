@@ -6,25 +6,23 @@ body {
   background-color: black;
   color: aliceblue;
 }
-
+/*Randomly generates stars in background*/
 .star {
   position: absolute;
   width: 1px;
   height: 1px;
   background-color: white;
 }
-
+/*A long time ago...*/
 .intro {
   margin: 30px;
   padding: 30px;
-
   top: 45%;
   left: 50%;
   z-index: 1;
   animation: intro 5s ease-out 1s;
   color: rgb(75, 213, 238);
   font-weight: 400;
-
   font-size: 400%;
   line-height: 25px;
   opacity: 0;
@@ -34,7 +32,7 @@ body {
   align-items: center;
   position: justify;
 }
-
+/*Animation*/
 @keyframes intro {
   0% {
     opacity: 0;
@@ -49,7 +47,7 @@ body {
     opacity: 0;
   }
 }
-
+/*Star Wars Logo*/
 .logo {
   display: flex;
   justify-content: center;
@@ -70,7 +68,7 @@ body {
   width: inherit;
 }
 
-/* Scale the logo down and maintain it centered */
+/*Logo Animation*/
 @keyframes logo {
   0% {
     width: 18em;
@@ -88,18 +86,13 @@ body {
   }
 }
 
-/*p {
-  color: #ffff82;
-}*/
-
+/*Main Content; Title, Intro, & Paragraphs*/
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   transform: perspective(300px) rotateX(25deg);
   transform-origin: 50% 100%;
   display: flex;
   justify-content: center;
-  /*align-items: center;
-  text-align: justify;*/
   position: absolute;
   margin-left: -9em;
   font-weight: bold;
@@ -119,29 +112,31 @@ body {
   right: 0;
   top: 0;
 }
+
 p {
   color: yellow;
 }
-/* Set the scrolling animation and position it */
+
 #content {
-  animation: scroll 90s linear 8s;
+  animation: scroll 60s linear 8s;
   position: absolute;
   justify-content: center;
   top: 100%;
 }
 
-#title,
-#subtitle {
+.title,
+.subtitle {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  color: yellow;
   margin-left: 10px;
   padding-left: 10px;
   margin-right: 10px;
   padding-right: 10px;
 }
-
+/* Set scrolling animation*/
 @keyframes scroll {
   0% {
     top: 100%;
@@ -152,24 +147,6 @@ p {
 }
 
 /*Custom CSS*/
-#div-card {
-  width: 500px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  border: solid;
-  color: yellow;
-}
-
-#search {
-  border: solid;
-  color: yellow;
-  margin: 10px;
-  height: 50px;
-  width: 250px;
-}
 
 .search-col {
   margin-top: 10px;
@@ -195,27 +172,10 @@ p {
   text-align: center;
 }
 
-.devs-bio {
-  height: 900px;
-  width: 300px;
-}
-
-.devs-bio {
-  background-color: black;
-  border: solid;
-  border-color: #ffff82;
-  height: 600px;
-  width: 900px;
-  float: right;
-  position: justify;
-}
-
 .parent {
   border: solid 2px yellow;
 }
-/* #leftSide{
-  border: solid 2px yellow;
-} */
+
 #rightSide {
   border: solid 2px yellow;
 }

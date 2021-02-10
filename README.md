@@ -35,10 +35,13 @@ Then I am able to gain a brief understanding of my search query
 -Iconic Star Wars opening sequence plays (with a few custom tweaks)
 -Card containing a search bar, search button & clear button appears
 -User inputs search query into search bar & presses search button
--If input is valid, SWAPI returns any relevant information, as well as
+-If input is valid, SWAPI returns any relevant information & GIPHY returns a relevant gif
+-If input is invalid, user recieves a message saying so, as well as image of Jar Jar Binks.
 
 ### Contributors
 
 -Bhavika Patel
 -Kajal Patel
 -Zakk Haug
+
+### Screenshots
