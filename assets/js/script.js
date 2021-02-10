@@ -47,7 +47,7 @@ $(document).ready(function () {
 
           //var myImage ="./assets/images/ohno.gif"
           var myImage = "./assets/images/mesa-sorry.jpg";
-          localStorage.removeItem();
+         
 
 
         
@@ -122,6 +122,7 @@ $(document).ready(function () {
 
         var myImage = giphyData.data[i].images.downsized_still.url;
         showImage(myImage);
+        searchHistory(name)
       });
   }
 
@@ -164,4 +165,8 @@ $(document).ready(function () {
     }
 
   }
+  $('#clear-btn').click(function(){
+    localStorage.clear()
+    li.empty();
+  })
 });
