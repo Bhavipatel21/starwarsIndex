@@ -229,4 +229,9 @@ position: justify;
   border: solid 2px yellow;
 } 
 
+#display{
+  height: 500px;
+  width: 500px;
+
+}
 
