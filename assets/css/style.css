@@ -219,7 +219,7 @@ float: right;
 position: justify;
 }
 
-#parent{
+.parent{
   border: solid 2px yellow;
 }
  /* #leftSide{
