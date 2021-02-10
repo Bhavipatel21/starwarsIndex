@@ -18,7 +18,26 @@ function getRandomPosition() {
   var randomY = Math.floor(Math.random() * y);
   return [randomX, randomY];
 }
+
+$("#section-card").hide();
+$("#Tab").hide();
+
+var secondsLeft = 60;
 $(document).ready(function () {
+ 
+     function setTimer() {
+   setInterval(function () {
+    
+     if (secondsLeft === 0) {
+        $("#section-card").show()
+        $("#Tab").show();
+          } else {
+        secondsLeft--;
+      }
+    }, 1000);
+  }
+  setTimer();
+  
 
   var searchBtn = $("#search-btn");
   // console.log("check the button-->", searchBtn);
@@ -49,10 +68,13 @@ $(document).ready(function () {
 
           //var myImage ="./assets/images/ohno.gif"
           var myImage = "./assets/images/mesa-sorry.jpg";
-         
+          var message = "Please enter valid character name!!!"  
 
+          var h3 =$("<h3>" + message + "</h3>");
+         // h3.attr("style","color:yellow;")
+          h3.attr("style","text-align:center; color:yellow;")
+          $("#details").append(h3);
 
-        
           showImage(myImage);
         } else {
           console.log("results--->", swapiData.results);
